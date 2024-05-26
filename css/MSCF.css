@@ -1,0 +1,553 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #28a745;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body {
+    height: 100%;
+}
+
+.btn {
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #f8f9fa;
+    border-color: #28a745;
+    text-shadow: none;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-color: aliceblue;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: rgb(17, 168, 4) !important;
+    font-weight: 550;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.navbar li navDropdown {
+    padding-left: 10%;
+}
+
+
+
+
+
+
+
+
+
+.video-container {
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
+}
+
+/* Ensure the video covers the entire container */
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10); /* Optional text shadow */
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.text-overlay h2{
+  text-transform: uppercase;
+  color: #2DB952;
+}
+
+
+@media only screen and (max-width: 991px){
+  .text-overlay h2{
+    font-size: 30px;
+  }
+
+  .text-overlay p{
+    font-size: 15px;
+  }
+
+  .pb-2{
+    font-size: 15px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+.hero-section {
+    position: relative;
+    background: url('MSCF.png') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black translucent overlay */
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 1; /* Ensure the text is above the overlay */
+}
+
+@media (max-width: 767.98px) {
+    .hero-section h1{
+        font-size: 30px;
+    }
+
+    .hero-section p{
+        font-size: 15px;
+    }
+}
+
+.second {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #080808;
+}
+
+@media (max-width: 767.98px) {
+    .second h1{
+        font-size: 30px;
+    }
+
+    .second p{
+        font-size:15px;
+        text-align: justify;
+    }
+}
+
+.third {
+    display: flex;
+    align-items: center;
+    background-color:#f8f9fa;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+    .third h1{
+        font-size: 30px;
+    }
+
+    .third p{
+        font-size:15px;
+        text-align: justify;
+    }
+}
+
+.third h3{
+    color: #28a745;
+}
+
+.example {
+    flex: 1;
+    padding: 20px;
+}
+
+.graph {
+    flex: 1;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+
+
+.graph img {
+    max-width: 40vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .graph img {
+        max-width: 80%; /* Adjust as needed */
+    }
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; /* Adjust the height as needed */
+}
+
+.calc {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set maximum width for responsiveness */
+    width: 100%; /* Ensure calculator takes full width */
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Adjust label color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+}
+
+.input-group input[type="range"] {
+    width: calc(100% - 80px);
+}
+
+.input-group .value {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result div {
+    margin-bottom: 10px;
+}
+
+.result div span {
+    font-weight: bold;
+}
+
+.chart-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .calc {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+}
+
+.calculator-container {
+    position: relative; /* Ensure the container is relatively positioned */
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the animation is behind the calculator */
+    background: linear-gradient(45deg, #1a1a1a, #ffffff, #5bcb71, #0d0558, #fafafa, #007acc, #004e89, #051d46); /* Adjust gradient colors as needed */    background-size: 400% 400%; /* Increase the size for smoother animation */
+    animation: gradientAnimation 15s ease infinite; /* Adjust animation duration and timing function */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.features{
+    background-color: #ffffff;
+    padding: 20px;
+    
+}
+
+.features h2{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #28a745;
+}
+
+.card{
+    background: linear-gradient(#2DB952, #023452);
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 767.98px) {
+    .g-4 {
+      gap: 20px; /* Increase the gap between cards on mobile devices */
+    }
+  }
+  
+.quote{
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 10px ;
+    background-color: #051d46;
+    box-shadow: #000;
+    color: white;
+}
+
+
+.footer{
+    font-size: 20px;
+    color: black;
+    margin-top: 30px;
+  }
+  
+  .footer a {
+    color: green; /* Change color to blue for all links */
+  }
+  
+  .footer img {
+    height: 30px; /* Set height of images */
+    width: 30px; /* Set width of images */
+  }
+  
+  .text-footer{
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 991px){
+    .text-footer{
+      font-size: 10px;
+    }
+  
+    .footer{
+      font-size: 12px;
+    }
+  }
+  
+
+  /* This MSC Algos */
+
+  #pagetwo{
+    background-image: url(tech.jpeg);
+    padding:20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #021520;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pagetwo h1{
+    margin-bottom: 50px;
+  }
+
+  .btn{
+    color: white;
+  }
+
+  .btn-primary {
+    background-color: #030303;
+    border-color: #28a745;
+    text-shadow: none;
+    text-align: center;
+}
+
+.buttony{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card-text{
+    margin: 10px;
+}
+
+.card-title{
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+
+#pagethree{
+    background-image: url(tech.jpeg);
+    padding:20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #021520;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+/* About Us  */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Section styles */
+  .about-us-section {
+    padding: 50px 20px;
+    background: white;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-section h2, .about-us-section h3, .about-us-section h4, .about-us-section h5 {
+    color: #2DB952;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section p, .about-us-section ul {
+    color: #100f0f;
+    line-height: 1.6;
+  }
+  
+  .intro {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .section ul li {
+    margin-bottom: 10px;
+    background: rgba(3, 99, 8, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .founder-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .founder-details h5 {
+    color: yellow;
+  }
+  
+  .founder-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #fff;
+  }
+  
+  .founder-details {
+    max-width: 600px;
+  }
+  
+  .founder-details h4 {
+    margin-top: 0;
+  }
+  
+  .founder-details h5 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #ffcc00;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .founder-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .founder-photo {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Ensure it appears above other content */
+  }
+  
+  .whatsapp-link img {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+  }
+
+  
