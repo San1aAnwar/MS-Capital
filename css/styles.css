@@ -127,17 +127,15 @@ body, html {
 
 
   @media only screen and (max-width: 991px){
-    .text-overlay {
-        width: 90%; /* Increased width for mobile view */
-        padding: 0 10px; /* Adjust padding for mobile view */
-    }
-      
+ 
     .text-overlay h3{
       font-size: 20px;
     }
 
     .text-overlay h1{
       font-size: 30px;
+      animation: none; /* Disable animation on mobile */
+      white-space: normal;
     }
 
     .pb-2{
