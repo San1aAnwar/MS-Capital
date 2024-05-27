@@ -127,6 +127,11 @@ body, html {
 
 
   @media only screen and (max-width: 991px){
+    .text-overlay {
+        width: 90%; /* Increased width for mobile view */
+        padding: 0 10px; /* Adjust padding for mobile view */
+    }
+      
     .text-overlay h3{
       font-size: 20px;
     }
