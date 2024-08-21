@@ -1,0 +1,339 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #28a745;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body {
+    height: 100%;
+}
+
+
+.video-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    bottom: -160px;
+}
+
+.logo-overlay img {
+    width: 300px;
+    height: auto;
+    
+}
+
+.arc {
+    position: relative;
+    margin-top: -100px;
+    background: white;
+    height: 120px;
+    border-top-left-radius: 100% 200px;
+    border-top-right-radius: 100% 200px;
+    z-index: 1;
+    border-top: 3px solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arc h2 {
+    margin-top: 60px;
+    font-size: 28px;
+    color: green;
+    text-transform: uppercase;
+}
+
+.arc p {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(61, 59, 59);
+    margin-top: -8px;
+}
+
+.contact .icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.contact .icon-text i {
+    margin-right: 10px;
+    color: #2f8f2f;
+}
+
+.contact .icon-text p {
+    margin: 0;
+    text-align: left;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px; /* Adjust padding as needed */
+font-size: 16px; /* Adjust font size as needed */
+color: green; /* Text color */
+border: 2px solid green; /* Green border */
+background-color: white; /* White background */
+text-decoration: none; /* Remove underline from link */
+border-radius: 5px; /* Rounded corners, adjust as needed */
+transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+}
+
+.button:hover {
+background-color: green; /* Background color on hover */
+color: white; /* Text color on hover */
+}
+
+
+button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+cursor: pointer;
+padding: 10px;
+margin: 10%;
+}
+
+.prev {
+left: 0;
+}
+
+.next {
+right: 0;
+}
+
+/*
+.golden-divider {
+height: 2px; /* Adjust the height as needed 
+background-color: gold; /* Gold color for the divider
+margin: 20px 0; /* Adjust the margin as needed 
+width: 50%; /* Adjust width if necessary 
+} */
+
+
+  .marquee {
+   overflow: hidden; 
+   margin-top: 5%;
+   margin-bottom: 5%;
+   
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: scrolling 80s linear infinite;
+  }
+  
+  .marquee-item {
+    flex: 0 0 16vw;
+    margin: 0 1vw;
+  /*   flex: 0 0 20vw; */
+  /*   margin: 0 2vw; */
+  }
+  
+  .marquee-item img {
+    display: block;
+    width: 100%;
+  /*   padding: 0 20px; */
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+  }
+
+  @media only screen and (max-width: 991px){
+    .marquee-item {
+        flex: 0 0 35vw;
+        margin: 0 1vw;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      /*   flex: 0 0 20vw; */
+      /*   margin: 0 2vw; */
+      }
+  }
+
+  .About{
+    margin : 5%;
+    text-align: justify;
+
+    
+  }
+
+  .About h4{
+    text-align: center;
+    color: #2f8f2f;
+    margin-top: 10px;
+    
+  }
+
+  #part2{
+    background-color: #f6f7ee;
+    margin-top: -30px;
+  }
+
+  .thumbnail-container {
+    text-align: center; /* Center the content */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.thumbnail-container img {
+    max-width: 100%; /* Ensure the thumbnail is responsive */
+    height: auto;
+    border: 2px solid #ccc; /* Optional border styling */
+    cursor: pointer; /* Cursor indicates clickable */
+}
+
+h4 {
+    text-align: center;
+    color: #2f8f2f;
+    text-transform: uppercase;
+}
+  
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon-link {
+    margin: 0 15px; /* Add space between icons */
+    font-size: 40px; /* Adjust icon size */
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #007bff; /* Change color on hover */
+}
+
+/*
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Allows buttons to wrap to a new line if needed
+    gap: 20px; /* Adds space between buttons 
+}
+
+.action-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.donate-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.donate-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.share-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.share-btn:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+.save-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.share-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+}
+
+.share-container a {
+    margin: 10px;
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.share-container a:hover {
+    color: #007bff;
+}
+*/
+
+
+/* Footer Styles */
+.footer {
+    background-color: green; /* Dark background color for contrast */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding for top and bottom */
+   /* position: fixed;  Fixed position to stay at the bottom */
+    bottom: 0; /* Aligns footer to the bottom of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.3); /* Optional shadow for visual separation */
+}
+
+.footer p {
+    margin: 0; /* Removes default margin */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.footer strong {
+    color: #ffd700; /* Gold color for company name */
+}
